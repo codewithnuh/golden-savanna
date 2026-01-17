@@ -19,7 +19,7 @@ export const About = () => {
           We won’t show you the world; we’ll show you Africa, better than anyone
           else.
         </p>
-        <div className="flex space-x-5 ">
+        <div className="flex flex-col md:flex-row space-y-3 space-x-5 justify-center md:justify-start ">
           <Button className="bg-secondary  rounded-2xl py-6 text-secondary-foreground font-bold max-w-60">
             Explore All Destinations
           </Button>
