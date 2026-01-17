@@ -8,6 +8,8 @@ export const Container = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={cn(className, "container px-8 mx-auto ")}>{children}</div>
+    <div className={cn(className, "container px-2 md:px-6 mx-auto ")}>
+      {children}
+    </div>
   );
 };

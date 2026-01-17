@@ -59,10 +59,6 @@ export const ImageGallery = ({
               </CarouselItem>
             ))}
           </CarouselContent>
-
-          {/* Navigation Buttons */}
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
       </div>
     </div>

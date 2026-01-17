@@ -59,7 +59,7 @@
   --secondary: #e77b2a;
   --secondary-foreground: #fff;
   --muted: #e77b2a;
-  --muted-foreground: oklch(0.556 0 0);
+  --muted-foreground: #e77b2a;
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
@@ -121,5 +121,24 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer utilities {
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+
+  /* Optional premium touch */
+  .animate-spin-slow:hover {
+    animation-play-state: paused;
   }
 }
