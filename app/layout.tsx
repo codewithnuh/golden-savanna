@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bricolage.className} antialiased`}>{children}</body>
+      <body className={`${bricolage.className} antialiased overflow-x-hidden`}>
+        {children}
+      </body>
     </html>
   );
 }
