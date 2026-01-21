@@ -45,7 +45,7 @@ export const DestinationsGallery = () => {
   );
 
   return (
-    <section className="mt-20 py-8 ">
+    <section className="mt-10 py-4 ">
       <Carousel
         plugins={[plugin.current]}
         opts={{
